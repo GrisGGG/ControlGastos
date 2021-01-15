@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+    <h1>Gestión de gastos</h1>
+    <form  id="transactionForm" action="">
+
+        <div class="nivelDato">
+            Tipo:
+            <label for="typeIngreso"><input id="typeIngreso" type="radio" name="ingreso-egreso" value="ingreso" checked>Ingreso</label>
+            <label for="typeEgreso"><input id="typeEgreso" type="radio" name="ingreso-egreso" value="egreso">Egreso</label>
+        </div>
+
+        <div  class="nivelDato">
+            <label for="typeDescription">Descripción</label>
+            <input  id="typeDescription" name="typeDescription" type="text">
+        </div>
+
+        <div  class="nivelDato"> 
+            <label for="typeMonto">Monto</label>
+            <input id="typeMonto" name="typeMonto" type="number">
+        </div>
+
+        <div  class="nivelDato">
+            <label for="typeCategoria">Categoria</label>
+            <input id="typeCategoria" name="typeCategoria" type="text">
+        </div>
+
+        <div  class="nivelDato">
+            <button id="botonEnvio" name="botonEnvio">Añadir</button>
+         </div>
+    </form>
+
+    <table>
+        <tr>
+            <th>Tipo de transacción</th>
+            <th>Descripción</th>
+            <th>Monto</th>
+            <th>Categoria</th>
+        </tr>
+        <tr>
+            <td>Ingreso</td>
+            <td>Sueldo</td>
+            <td>15,000</td>
+            <td>Ganancia</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
