@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,8 +14,8 @@
 
         <div class="nivelDato">
             Tipo:
-            <label for="typeIngreso"><input id="typeIngreso" type="radio" name="ingreso-egreso" value="ingreso" checked>Ingreso</label>
-            <label for="typeEgreso"><input id="typeEgreso" type="radio" name="ingreso-egreso" value="egreso">Egreso</label>
+            <label for="typeIngreso"><input id="typeIngreso" type="radio" name="selecterType" value="ingreso" checked>Ingreso</label>
+            <label for="typeEgreso"><input id="typeEgreso" type="radio" name="selecterType" value="egreso">Egreso</label>
         </div>
 
         <div  class="nivelDato">
@@ -22,7 +23,7 @@
             <input  id="typeDescription" name="typeDescription" type="text">
         </div>
 
-        <div  class="nivelDato"> 
+        <div  class="nivelDato">
             <label for="typeMonto">Monto</label>
             <input id="typeMonto" name="typeMonto" type="number">
         </div>
@@ -37,7 +38,7 @@
          </div>
     </form>
 
-    <table>
+    <table id="transactionTable">
         <tr>
             <th>Tipo de transacción</th>
             <th>Descripción</th>
@@ -52,5 +53,6 @@
         </tr>
     </table>
 </div>
+     <script src="script.js"</script></script>
 </body>
 </html>
